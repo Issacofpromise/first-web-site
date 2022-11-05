@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+  <a href="index.html"style="color:lime">WEB</a>
+  <h2>Conditional statements</h2>
+  <script>
+    document.write("1<br>");
+    document.write("2<br>");
+    document.write('3<br>');
+    document.write('4<br>');
+  </script>
+  <h3>IF-True.</h3>
+  <script>
+    document.write('1<br>');
+    if(true){
+     document.write('2<br>'); 
+    } else{
+      document.write('3<br>');
+    } document.write('4<br>');
+  </script>
+    <h3>IF-False.</h3>
+  <script>
+    document.write('1<br>');
+    if(false){
+     document.write('2<br>'); 
+    } else{
+      document.write('3<br>');
+    } document.write('4<br>');
+  </script>
+  <h4>Loop & Array</h4>
+  <script>var cos=['egoing','leezche','duru','taeho','miyeon']</script>
+  <ol type='I'>
+    <script>
+      var i = 0;
+      while(i < cos.length){
+        document.write('<li>'+cos[i]+'</li>');      
+        i = i + 1}
+    </script>
+    <script>
+      var cowk={"davichi":"gin-young.","jugong":"keung"}
+      document.write("<br>"+"davichi : "+cowk.davichi+"<br>");
+      document.write("jugong : "+cowk.jugong+"<br>");  
+      cowk.programmer='mi-yeon.';
+      cowk['data scient']='taeho.';
+      document.write("programm : "+cowk.programmer+"<br>");
+      document.write('data : '+cowk['data scient']+'<br><br>')
+      
+      for(var s in cowk) {
+        document.write(s+' : '+cowk[s]+'<br>');}
+      
+      cowk.ShA=function() {
+        for(var k in this) {
+          document.write(k+' : '+this[k]+'<br>')}}
+      cowk.ShA();   
+    </script>
+</body>
+</html>
+

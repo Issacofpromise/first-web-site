@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  #grid {border:3px indianred solid;
+        display:grid;
+         grid-template-columns: 150px 1fr;}
+  .A {border:3px solid pink;
+      padding:13px}     
+  @media (max-width:500px) {
+    .A {display:none;}}  
+</style>
+<script src="colors.js"></script> 
+</head>
+<body>
+<div id="grid">
+<div class="A">NAVIGATION</div>
+<div class="A">CSS Grid Layout (level 1) Method of using a grid concept to lay out content, providing a mechanism for authors to divide available space for layout into columns and rows using a set of predictable sizing behaviors. Includes support for all grid-* properties and the fr unit.</div>
+</div>
+<a href="index.html"style="color:lime">WEB</a>
+<input type="button" value="night"onclick="
+  N_D_Handler(this)">
+  <ul>
+    <script>
+    document.write('<li>1</li>');
+    var i = 0;
+    while(i<3){
+      document.write('<li>2</li>')
+      document.write('<li>3</li>')
+      i=i+1;
+    }
+    document.write('<li>4</li>')
+    </script>
+  </ul>
+  <ul>
+    <script>
+      function two() {
+      document.write('<li>2-1</li>');
+      document.write('<li>2-2</li>');
+      }
+    document.write('<li>1</li>');
+    two();
+    document.write('<li>3</li>');
+    two();
+    document.write('<li>4</li>'+'<br>')
+    </script>
+     <script>
+      function para() {
+      document.write(1+4+'<br>');}         
+      para();
+    function sum(le,re) {
+      document.write(le+re+'<br>')}
+    function Col(le,ri) {
+      document.write('<div style="color:indianred">'+(le*ri)+'</div>');
+    }
+    sum(7,8);
+    Col(3,8);
+    sum(6,7)
+    </script>
+    <script>
+      function split(le,ri){
+        return le/ri;}  
+      document.write('<br>'+split(4,7)+'<br>');
+      document.write('<div style="color:indianred;font-size:2rem;font-weight:bold;">'+split(3,6)+'</div>');
+      document.write('<div style="font-size:1.8rem;">'+split(2,7)+'</div>')
+    </script>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB - CSS</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css"> 
+ <script> 
+   function Links(co) {
+     var ali=document.querySelectorAll('a');
+    var i = 0;
+    while(i < ali.length){
+      ali[i].style.color=co;
+      i=i+1;}}
+   function bck(co) {
+     document.querySelector('body').style.backgroundColor=co;}
+   function tx(co) {
+     document.querySelector('body').style.color=co}
+   
+   function N_D_Handler(se) {     
+  if(se.value === 'night'){
+    bck('black');
+    tx('white');    
+    se.value='day';  
+    Links('powderblue')
+} else {  
+    bck('white');
+    tx('black');      
+    se.value='night';
+    Links('black');
+    }}
+ </script> 
+</head>
+<body>
+<input type="button" value="night"onclick="
+  N_D_Handler(this)">
+  <h1><a href="index.html">WEB</a></h1>
+  <div class="grid">
+<ol type="I">
+<li><a href="5.html">HTML</a></li>
+<li><a href="6.html">CSS</a></li>
+<li><a href="7.html">JavaScript</a></li>
+<li><a href="botton1.html">Botton</a></li>
+<li><a href="8.html">Grid</a></li>
+    </ol>
+    <div class="article">
+        <h2>CSS</h2>  
+        <p>
+          Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.[1] Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
+        <input type='button' value='Hi' onclick="alert('hi')"><input type='text' onchange="alert('changed')"><input type='text' onkeydown="alert('key down!')">
+     </p>
+    </div>    
+  </div>
+  </body>
+  </html>
